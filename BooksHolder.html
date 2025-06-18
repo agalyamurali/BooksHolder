@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooksHolder</title>
+    <link rel="stylesheet" href="bookproject.css">
+</head>
+<body>
+<div class="title-bar">
+    <h1>BooksHolder</h1>
+</div>
+<div class="bookscontainer">
+    <div class="container">
+        <p > Demo </p>
+        <h2>rich dad poor dad</h2>
+        <h3>robert</h3>
+        <p >The book explodes the myth that you do not need to earn a high income to become rich. It explains several methods of managing your personal finance effectively and teaches the difference between working for money and having your money work for you.
+        </p>
+        <button >delete</button>
+    </div>
+</div>
+
+    <button class="addbtn">+</button>
+
+    <div class="overlay"> </div>
+  
+    <div class="popup">
+        <h2>add book</h2>
+        <input  id="title" placeholder="book title">
+        <input id="author" placeholder="author">
+        <textarea placeholder="short description" id="description"></textarea>
+
+        <label for="file-input" class="file-label">Choose File</label>
+        <input type="file" id="file-input" onchange="updateFileName()">
+        <span class="file-name" id="file-name">No file chosen</span>
+
+        <button class="update" onclick="add()">Add</button>
+        <button class="cancel" >Cancel</button>
+    </div>
+   
+   
+
+   
+
+    <script src="BooksHolder.js"></script>
+</body>
+</html>
